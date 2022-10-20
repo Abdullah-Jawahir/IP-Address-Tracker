@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+  <link rel="stylesheet" href="./CSS/styles.css">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="bar io-bar">
+      <h2 class="app-name">IP Address Tracker</h2>
+
+      <form id="input-form">
+        <input type="text" id="search-field" placeholder="Search for any IP address or domain" autofocus autocomplete="off">
+        <button id="search-btn"><img src="./images/icon-arrow.svg" alt="arrow-icon"></button>
+      </form>
+
+      <div class="details-box">
+        <div class="card">
+          <h6>
+            IP Address
+          </h6>
+          <p id="ip-addres">192.212.174.101</p>
+        </div>
+        <div class="card">
+          <h6>
+            Location
+          </h6>
+          <p id="location">Brooklyn, NY 10001</p>
+        </div>
+        <div class="card">
+          <h6>
+            Timezone
+          </h6>
+          <p id="timezone">UTC-05:00</p>
+        </div>
+        <div class="card last-el">
+          <h6>
+            ISP
+          </h6>
+          <p id="isp">SpaceX Starlink</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bar" id="the-map">
+
+    </div>
+
+    <div class="bar attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Mohamed Jawahir Abdullah</a>.
+    </div>
+
+  </div>
+
+
+  <script src="./app.js"></script>
+  <!-- <script src="./test.js"></script> -->
+</body>
+
+</html>
